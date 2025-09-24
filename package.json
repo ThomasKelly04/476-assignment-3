@@ -1,0 +1,25 @@
+{
+  "name": "erc20-didlab",
+  "version": "1.0.0",
+  "description": "DIDLab ERC-20 Token Project (Hardhat v3 + Viem)",
+  "type": "module",
+  "scripts": {
+    "compile": "hardhat compile",
+    "deploy": "hardhat run scripts/deploy.js --network didlab",
+    "transfer": "hardhat run scripts/transfer-approve.js --network didlab",
+    "airdrop": "hardhat run scripts/batch-vs-singles.js --network didlab",
+    "logs": "hardhat run scripts/logs-events.js --network didlab"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^4.0.1",
+    "ethers": "^6.15.0",
+    "hardhat": "^3.0.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0",
+    "dotenv": "^16.4.0",
+    "viem": "^2.9.0"
+  }
+}
